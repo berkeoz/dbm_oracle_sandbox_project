@@ -5,7 +5,26 @@
         "ProjectId": "bb70ad95-e0b9-47b3-abea-af1c23061bbc",
         "ProjectName": "devprojectOracle",
         "DBTypeName": "Oracle",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "429be5b5-84ad-4681-a0ba-60d2d3bfe73a",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "c94c9097-8577-430b-bc18-cf23d3f679d7",
+                "DatabaseAliasName": "dev_oracle_db_1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/berkeoz/dbm_oracle_sandbox1.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -21,7 +40,31 @@
       "UserData": [
         {
           "UserName": "berkeoz",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "c94c9097-8577-430b-bc18-cf23d3f679d7",
+              "DatabaseAliasName": "dev_oracle_db_1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "Oracle",
+                    "host": "localhost",
+                    "port": "1522",
+                    "identifierType": "SERVICE_NAME",
+                    "identifier": "orclpdb.us-central1-a.c.dbmaestro-dev.internal",
+                    "userName": "user_dev12",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "berkeoz",
+                "Password": "OwpWlkWmltynchlAGzUVJhagkl4gbzNshplobMMz7PjSNDNYC+pPI+/W6mO5R+Lj"
+              }
+            }
+          ]
         }
       ]
     }
