@@ -21,6 +21,17 @@
                   "RemoteBranchName": "main",
                   "LocalBranchName": "main"
                 }
+              },
+              {
+                "DatabaseId": "eb02b3d1-b26b-4e10-a84a-6a5d5734f353",
+                "DatabaseAliasName": "dev_oracle_db_2",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/berkeoz/dbm_oracle_sandbox2.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
               }
             ]
           }
@@ -55,6 +66,29 @@
                     "identifierType": "SERVICE_NAME",
                     "identifier": "orclpdb.us-central1-a.c.dbmaestro-dev.internal",
                     "userName": "user_dev12",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "berkeoz",
+                "Password": "OwpWlkWmltynchlAGzUVJhagkl4gbzNshplobMMz7PjSNDNYC+pPI+/W6mO5R+Lj"
+              }
+            },
+            {
+              "DatabaseId": "eb02b3d1-b26b-4e10-a84a-6a5d5734f353",
+              "DatabaseAliasName": "dev_oracle_db_2",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "Oracle",
+                    "host": "localhost",
+                    "port": "1522",
+                    "identifierType": "SERVICE_NAME",
+                    "identifier": "orclpdb.us-central1-a.c.dbmaestro-dev.internal",
+                    "userName": "USER_DEV11",
                     "Password": "do1NBD0OcmAl1jAcpH7iWg=="
                   }
                 }
